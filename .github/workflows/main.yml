@@ -24,7 +24,7 @@ jobs:
        with:
          pattern: '[:\.]+'
          string: "{{ steps.current-time.outputs.time }}"
-         replace-width: '-'
+         replace-with: '-'
          flags: 'g'
      - name: Deploy to EB
        uses: einaregilsson/beanstalk-deploy@v14
