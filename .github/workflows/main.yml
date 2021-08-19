@@ -23,7 +23,7 @@ jobs:
        id: format-time
        with:
          pattern: '[:\.]+'
-         string: "{{ steps.current-time.outputs.time }}"
+         string: "${{ steps.current-time.outputs.time }}"
          replace-with: '-'
          flags: 'g'
      - name: Deploy to EB
