@@ -33,7 +33,7 @@ jobs:
          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
          application_name: aws-test-app
          environment_name: Awstestapp-env
-         version_label: "leroy-aws-deployment-${{ steps.format-time.ouputs.replaced }}"
+         version_label: "douglas-aws-deployment-${{ steps.format-time.ouputs.replaced }}"
          region: us-east-1
          deployment_package: deploy.zip
          
